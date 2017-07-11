@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Archive: 2015 | 驴蛙科技 </title>
+	<meta property="og:title" content=" Archive: 2015 | 驴蛙科技 " />
+	<meta name="twitter:title" content=" Archive: 2015 | 驴蛙科技 ">
+
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary">
+
+	<meta name="description" content=" Archive: 2015 | 驴蛙科技 ">
+	<meta property="og:description" content=" Archive: 2015 | 驴蛙科技 " />
+	<meta name="twitter:description" content=" Archive: 2015 | 驴蛙科技 " />
+
+	<link rel="icon" type="image/x-icon" href="http://frogdonkey.github.io/asset/img/favicon.png">
+
+	<link rel="image_src" href="http://frogdonkey.github.io/asset/img/logo.png" >
+	<meta property="og:image" content="http://frogdonkey.github.io/asset/img/logo.png" />
+
+	<link href="http://frogdonkey.github.io/atom.xml" title="驴蛙科技" type="application/atom+xml" rel="alternative">
+
+	<link rel="canonical" href="/archives/2015/index.html">
+
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.19.3/css/semantic.min.css">
+	<link rel="stylesheet" href="/asset/css/style.css">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.19.3/javascript/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+	<div class="layout-header">
+		<div class="ui fixed transparent inverted main menu panel-header">
+			<div class="container box-header">
+				<div class="title item header-item">
+					<a href="/" title="null">驴蛙科技</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="layout-menu">
+
+		<nav class="ui transparent vertical inverted labeled icon menu">
+
+			<a class="item" href="/">
+				<i class="home icon"></i>
+				Home
+			</a>
+
+			<a class="item" href="/archives">
+				<i class="sitemap icon"></i>
+				Sitemap
+			</a>
+
+			<a class="item" href="/page/">
+				<i class="browser icon"></i>
+				Page
+			</a>
+
+		</nav>
+
+	</div>
+
+	<div class="layout-menu-footer">
+
+		<nav class="ui transparent inverted menu">
+
+			<a class="item" href="/">
+				<i class="home icon"></i>
+				Home
+			</a>
+
+			<a class="item" href="/archives">
+				<i class="sitemap icon"></i>
+				Sitemap
+			</a>
+
+			<a class="item" href="/page/">
+				<i class="browser icon"></i>
+				Page
+			</a>
+
+		</nav>
+
+	</div>
+
+
+
+	<div class="layout-content">
+
+
+	
+		<div class="panel-content">
+			<div class="ui grid box-content">
+				<div class="two wide column">
+					&nbsp;
+				</div>
+
+				<div class="twelve wide column">
+					<h2 class="panel-title panel-archive-title">Archive: 2015</h2>
+					<div class=" box-archive-list">
+
+
+						<div class="ui piled raised segment box-archive-item" itemscope itemtype="http://schema.org/Article" >
+							<div class="ui black ribbon label"><a href="/2015/06/28/mattermost/" itemprop="url" ><span  class="archive-item-title" itemprop="name">Ubuntu12.04安装Mattermost</span></a></div>
+
+							<p class="box-archive-item-date"><a href="/2015/06/28/mattermost/"><span class="archive-item-date" itemprop="datePublished" content="2017-07-11">2015-06-28</span></a></p>
+
+							<div class="box-archive-item-description">
+<p>Mattermost 是一个 Slack 的开源替代品。Mattermost 采用 Go 语言开发，这是一个开源的团队通讯服务。为团队带来跨 PC 和移动设备的消息、文件分享，提供归档和搜索功能。</p>
+<a id="more"></a>
+<h2 id="一、安装前提"><a href="#一、安装前提" class="headerlink" title="一、安装前提"></a>一、安装前提</h2><p>Ubuntu 12.04</p>
+<p>####curl 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y curl</div></pre></td></tr></table></figure></p>
+<p>####wget安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update &amp;&amp; apt-get install -y wget</div></pre></td></tr></table></figure></p>
+<p>####翻墙<br><a href="https://github.com/apenwarr/sshuttle" target="_blank" rel="external">sshuttle</a>使用ssh账号翻墙，前提需要准备一个境外的ssh账号</p>
+<p>#####1、确保python安装</p>
+<p>#####2、下载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git://github.com/apenwarr/sshuttle</div></pre></td></tr></table></figure></p>
+<p>#####3、运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./sshuttle -r username@sshserver 0.0.0.0/0 -vv</div></pre></td></tr></table></figure></p>
+<p>如果需要DNS也通过代理<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./sshuttle --dns -vvr username@sshserver 0/0</div></pre></td></tr></table></figure></p>
+<h2 id="二、安装步骤"><a href="#二、安装步骤" class="headerlink" title="二、安装步骤"></a>二、安装步骤</h2><p>###升级Ubuntu</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update </div><div class="line">sudo apt-get install -y build-essential</div></pre></td></tr></table></figure>
+<p>###安装nodejs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">curl -sL https://deb.nodesource.com/setup | sudo bash -</div><div class="line">sudo apt-get install -y nodejs</div></pre></td></tr></table></figure>
+<p>###安装ruby<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y ruby-full</div><div class="line">gem install compass</div></pre></td></tr></table></figure></p>
+<p>###安装 POSTFIX<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y postfix</div></pre></td></tr></table></figure></p>
+<p>###安装 GO<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y gcc libc6-dev make git mercurial</div><div class="line">curl -sSL https://golang.org/dl/go1.4.2.src.tar.gz | sudo tar -v -C /usr/src -xz</div><div class="line">cd /usr/src/go/src &amp;&amp; ./make.bash --no-clean 2&gt;&amp;1</div></pre></td></tr></table></figure></p>
+<p>###设置GO目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkdir -p /go/src /go/bin &amp;&amp; sudo  chmod -R 777 /go</div></pre></td></tr></table></figure></p>
+<p>###设置环境变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">GOPATH /go</div><div class="line">PATH $GOPATH/bin:/usr/src/go/bin:$PATH</div></pre></td></tr></table></figure></p>
+<p>###安装mysql</p>
+<p>mysql用户名和组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo groupadd -r mysql </div><div class="line">sudo useradd -r -g mysql mysql</div></pre></td></tr></table></figure></p>
+<p>perl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y perl</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5</div><div class="line">sudo echo &quot;deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.5&quot; &gt; /etc/apt/sources.list.d/mysql.list</div></pre></td></tr></table></figure>
+<p>mysql<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get -y install mysql-server</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sed -Ei &apos;s/^(bind-address|log)/#&amp;/&apos; /etc/mysql/my.cnf</div></pre></td></tr></table></figure>
+<p>###安装redis<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">wget http://download.redis.io/redis-stable.tar.gz; \</div><div class="line">                tar xvzf redis-stable.tar.gz; \</div><div class="line">                cd redis-stable; \</div><div class="line">                make install</div></pre></td></tr></table></figure></p>
+<p>##三、配置</p>
+<p>###安装mattermost<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">go get github.com/tools/godep</div><div class="line">cd /go/src/github.com/mattermost/platform; godep restore</div><div class="line">go install github.com/mattermost/platform</div><div class="line">cd /go/src/github.com/mattermost/platform/web/react; npm install</div></pre></td></tr></table></figure></p>
+<p>###配置mysql</p>
+<p>####用户设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CREATE USER &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;vagrant&apos;</div><div class="line">GRANT ALL ON *.* TO &apos;root&apos;@&apos;%&apos; WITH GRANT OPTION ;</div><div class="line">CREATE DATABASE IF NOT EXISTS `mattermost_test` ;</div><div class="line">CREATE USER &apos;mmuser&apos;@&apos;%&apos; IDENTIFIED BY &apos;mostest&apos;;</div><div class="line">GRANT ALL ON `mattermost_test`.* TO &apos;mmuser&apos;@&apos;%&apos; ;</div><div class="line">FLUSH PRIVILEGES ;</div></pre></td></tr></table></figure></p>
+<p>####权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chown -R mysql:mysql &quot;$DATADIR&quot;</div></pre></td></tr></table></figure></p>
+<p>##四、启动</p>
+<p>###设置dockerhost<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo echo &quot;127.0.0.1 dockerhost&quot; &gt;&gt; /etc/hosts</div><div class="line">/etc/init.d/networking restart</div></pre></td></tr></table></figure></p>
+<p>###启动mysqld<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysqld &amp;</div></pre></td></tr></table></figure></p>
+<p>###启动postfix<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/postfix restart</div></pre></td></tr></table></figure></p>
+<p>###启动redis<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">redis-server &amp;</div></pre></td></tr></table></figure></p>
+<p>###启动react处理器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /go/src/github.com/mattermost/platform/web/react &amp;&amp; npm start &amp;</div></pre></td></tr></table></figure></p>
+<p>###启动goserver<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /go/src/github.com/mattermost/platform/; go run mattermost.go -config=config_docker.json &amp;</div></pre></td></tr></table></figure></p>
+<p>###表升级<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ALTER TABLE Audits ENGINE = MYISAM;</div><div class="line">ALTER TABLE ChannelMembers ENGINE = MYISAM;</div><div class="line">ALTER TABLE Channels ENGINE = MYISAM;</div><div class="line">ALTER TABLE Posts ENGINE = MYISAM;</div><div class="line">ALTER TABLE Sessions ENGINE = MYISAM;</div><div class="line">ALTER TABLE Teams ENGINE = MYISAM;</div><div class="line">ALTER TABLE Users ENGINE = MYISAM;</div></pre></td></tr></table></figure></p>
+<p>###compass watch<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /go/src/github.com/mattermost/platform/web/sass-files &amp;&amp; compass watch</div></pre></td></tr></table></figure></p>
+<p>要正常运行还需要配置aws<br>mattermost的文件都是上传到aws的，国内的用户算是杯具了~</p>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="two wide column">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel-archive-nav">
+			<div class="box-archive-nav">
+
+				<nav class="archive-nav">
+
+
+				</nav>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="layout-footer" style="clear: both">
+		<div class="panel-footer">
+			<div class="box-footer">
+				<footer class="footer">
+					<p class="cr">&copy; 2017 <a href="https://github.com/foreachsam/"  target="_blank">lywoostudio</a> </p>
+
+					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-aiki" target="_blank">Aiki</a></span>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
